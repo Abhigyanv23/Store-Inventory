@@ -6,11 +6,12 @@ This is a complete, from-scratch inventory management application. This system p
 It's built with a React frontend (styled with standard CSS), a Node.js/Express backend API, and a MySQL database.
 
 
-*(Suggestion: Add a screenshot of your running application here!)*
+
+<img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/c468ef51-52fd-4c29-8355-620e3b04c3d5" />
 
 ---
 
-## ✅ Features
+##  Features
 
 * **Real-time Dashboard:** View key stats at a glance, including total products, total stock value, low stock items, and out-of-stock items.
 * **Full Product CRUD:** A complete Create, Read, Update, and Delete workflow for all your products.
@@ -21,7 +22,7 @@ It's built with a React frontend (styled with standard CSS), a Node.js/Express b
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:**
     * React
@@ -39,7 +40,7 @@ It's built with a React frontend (styled with standard CSS), a Node.js/Express b
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Follow these instructions to get the project running on your local machine.
 
