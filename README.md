@@ -1,4 +1,4 @@
-Full-Stack Inventory Management System 
+# Full-Stack Inventory Management System 
 
 This is a comprehensive, enterprise-ready inventory management application built from scratch. It provides a secure, multi-user environment for managing products, tracking stock levels, and analyzing inventory data through a dynamic dashboard.
 
@@ -9,7 +9,7 @@ The system is built with a React frontend, a secure Node.js/Express backend API,
 
 
 
- Features
+# Features
 
 1. Security & Authentication
 
@@ -73,7 +73,7 @@ Full Accountability: A dedicated page showing the 200 most recent stock changes.
 
 Detailed Records: Each log entry records the User, Product, Old Quantity, New Quantity, Reason (e.g., "Stock Update," "Product Created"), and a precise Timestamp.
 
-* Tech Stack *
+# Tech Stack
 
 Frontend:
 
