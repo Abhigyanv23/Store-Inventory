@@ -25,7 +25,7 @@ Admin-First Registration: The first user to register is automatically assigned t
 
 The app has two distinct user roles with different capabilities:
 
-Admin Role:
+* Admin Role:
 
 Full CRUD (Create, Read, Update, Delete) access to Products.
 
@@ -37,7 +37,7 @@ Ability to Export the product list to CSV.
 
 Full access to all dashboard filters.
 
-Staff Role:
+* Staff Role:
 
 View-only access to the dashboard and product list.
 
