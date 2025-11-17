@@ -1,4 +1,4 @@
-* Full-Stack Inventory Management System *
+Full-Stack Inventory Management System 
 
 This is a comprehensive, enterprise-ready inventory management application built from scratch. It provides a secure, multi-user environment for managing products, tracking stock levels, and analyzing inventory data through a dynamic dashboard.
 
@@ -9,7 +9,7 @@ The system is built with a React frontend, a secure Node.js/Express backend API,
 
 
 
-* Features *
+ Features
 
 1. Security & Authentication
 
@@ -107,87 +107,3 @@ Database:
 
 MySQL
 
-🚀 Getting Started
-
-Follow these instructions to get the project running on your local machine.
-
-Prerequisites
-
-Node.js (which includes npm)
-
-MySQL Workbench (or any MySQL client)
-
-1. Clone the Repository
-
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
-
-
-2. Backend Setup
-
-Navigate to the backend folder:
-
-cd backend
-
-
-Install all required npm packages:
-
-npm install
-
-
-Create a .env file in the backend folder and add your credentials. The JWT_SECRET is new and required.
-
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=inventory_system
-PORT=5000
-JWT_SECRET=a-very-long-and-random-secret-key-123!@#
-
-
-Start the backend server:
-
-npm run dev
-
-
-The server will be running at http://localhost:5000.
-
-3. Database Setup
-
-Open MySQL Workbench and connect to your local server.
-
-Run the following single SQL command:
-
-CREATE DATABASE inventory_system;
-
-
-The backend server will automatically create all 5 tables (users, products, categories, suppliers, stock_logs) and insert sample data on its first run.
-
-4. Frontend Setup
-
-Open a new terminal and navigate to the frontend folder:
-
-cd frontend
-
-
-Install all required npm packages:
-
-npm install
-
-
-Start the React application:
-
-npm start
-
-
-Your browser will automatically open to http://localhost:3000.
-
-5. First Use
-
-You will be on the login page. Click "Need an account? Register".
-
-Create your first user. This account will be the Admin.
-
-You will be sent back to the login page. Log in with the account you just created.
-
-You will have full access to all features.
