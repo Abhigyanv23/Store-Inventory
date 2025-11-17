@@ -25,7 +25,7 @@ Admin-First Registration: The first user to register is automatically assigned t
 
 The app has two distinct user roles with different capabilities:
 
-* Admin Role:
+## Admin Role:
 
 Full CRUD (Create, Read, Update, Delete) access to Products.
 
