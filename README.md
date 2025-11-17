@@ -1,109 +1,79 @@
-# Full-Stack Inventory Management System 
+# Full-Stack Inventory Management System
 
-This is a comprehensive, enterprise-ready inventory management application built from scratch. It provides a secure, multi-user environment for managing products, tracking stock levels, and analyzing inventory data through a dynamic dashboard.
+Enterprise-grade inventory, stock tracking, and dashboard analytics — built with React, Node.js, and MySQL.
 
-The system is built with a React frontend, a secure Node.js/Express backend API, and a MySQL database. It features a complete authentication system with distinct user roles, a full audit trail for stock changes, and a paginated, filterable interface designed for scalability.
+<p align="center"> <img src="https://img.shields.io/badge/Frontend-React-blue" /> <img src="https://img.shields.io/badge/Backend-Node.js-green" /> <img src="https://img.shields.io/badge/Database-MySQL-orange" /> <img src="https://img.shields.io/badge/Status-Production%20Ready-success" /> </p>
 
+# Overview
 
-<img width="914" height="873" alt="image" src="https://github.com/user-attachments/assets/a504648c-1fe0-466d-b9b3-cb9c26fb6541" />
+The Full-Stack Inventory Management System is a scalable and secure solution for managing real-world business inventory operations.
 
+It includes:
 
+* Role-based access
+
+* Complete stock audit trail
+
+* Dashboard analytics & visualizations
+
+* Paginated + filterable product management
+
+* Export & reporting features
+
+The system is optimized for speed, security, and clean UI/UX.
+
+# Screenshot
+<p align="center"> <img width="80%" src="https://github.com/user-attachments/assets/a504648c-1fe0-466d-b9b3-cb9c26fb6541" /> </p>
 
 # Features
+ **1. Security & Authentication**
 
-1. Security & Authentication
+* JWT-based authentication
 
-Secure JWT Authentication: The entire application is protected. Access is granted via jsonwebtoken (JWT) after successful login.
+* Passwords hashed using bcryptjs
 
-Password Hashing: User passwords are never stored in plain text. They are securely hashed using bcryptjs.
+* Protected routes for all sensitive endpoints
 
-Login & Registration: Users can securely register new accounts and log in.
+* First user → Admin
 
-Admin-First Registration: The first user to register is automatically assigned the "admin" role. All subsequent users default to "staff".
+* Subsequent users → Staff
 
-2. User Roles & Permissions
+ **2. User Roles & Permissions**<br>
+ <br>
+***Admin***
 
-The app has two distinct user roles with different capabilities:
+* Full CRUD on Products, Categories, Suppliers
 
-## Admin Role:
+* Access to Stock Audit Logs
 
-Full CRUD (Create, Read, Update, Delete) access to Products.
+* Export products to CSV
 
-Full CRUD access to Categories and Suppliers via a dedicated "Manage" page.
+* Full dashboard filters enabled
 
-Access to the Stock Audit Log to see a full history of all changes.
+* Can edit all product fields
 
-Ability to Export the product list to CSV.
+***Staff***
 
-Full access to all dashboard filters.
+* View-only access to dashboard & product list
 
-* Staff Role:
+* Can only update quantity, minimum stock
 
-View-only access to the dashboard and product list.
+* No access to add product, delete product
 
-Limited Edit Power: Can only update the Quantity and Min. Stock of a product. All other fields (Name, Price, SKU, etc.) are locked.
+* Cannot manage (categories/suppliers), view logs, export
 
-No Access to "Manage," "Logs," "Add Product," "Delete Product," or "Export" features.
+ **3. Interactive Dashboard**
 
-3. Interactive Dashboard
+* Total Products
 
-At-a-Glance Stats: Real-time cards for Total Products, Total Stock Value, Low Stock Items, and Out of Stock Items.
+* Total Stock Value
 
-Data Visualization:
+* Low Stock Count
 
-Products by Category: A dynamic pie chart.
+* Out of Stock Count
 
-Top 5 Products by Stock Value: A dynamic bar chart.
+* Pie Chart: Products by Category
 
-Date-Range Filtering: Users can select a "Start Date" and "End Date" to filter the charts, showing only products added within that period.
+* Bar Chart: Top 5 Products by Stock Value
 
-4. Product & Data Management
-
-Full Product List: A paginated list of all products, showing stock status and details.
-
-Advanced Filtering: Filter the product list by Search (Name/SKU), Category, Supplier, and Stock Status.
-
-Pagination: The product list is paginated (20 items per page) to ensure fast performance, even with thousands of products.
-
-Export to CSV: (Admin) Download the complete, filtered product list as a .csv file.
-
-5. Stock Audit Log (Admin Only)
-
-Full Accountability: A dedicated page showing the 200 most recent stock changes.
-
-Detailed Records: Each log entry records the User, Product, Old Quantity, New Quantity, Reason (e.g., "Stock Update," "Product Created"), and a precise Timestamp.
-
-# Tech Stack
-
-Frontend:
-
-React (with Hooks & Functional Components)
-
-react-datepicker (for date filtering)
-
-recharts (for charts)
-
-axios (for API requests)
-
-lucide-react (for icons)
-
-Standard CSS Modules
-
-Backend:
-
-Node.js & Express
-
-mysql2 (database driver)
-
-jsonwebtoken (for authentication)
-
-bcryptjs (for password hashing)
-
-json2csv (for CSV export)
-
-cors & dotenv
-
-Database:
-
-MySQL
-
+* Date-Range Filtering for all charts
