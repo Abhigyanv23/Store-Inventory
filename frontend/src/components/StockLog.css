@@ -1,0 +1,87 @@
+.log-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.log-container h2 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #374151;
+}
+.log-container p {
+  color: #6b7280;
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+}
+
+.log-table-wrapper {
+  overflow-x: auto;
+}
+
+.log-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.log-table th,
+.log-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.log-table th {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  background-color: #f9fafb;
+}
+
+.log-product-name {
+  font-weight: 500;
+}
+.log-product-id {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.log-user {
+  font-weight: 500;
+  color: #374151;
+}
+
+.log-change {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.log-change .icon { width: 16px; height: 16px; }
+.log-change .icon-arrow { width: 12px; height: 12px; color: #9ca3af; }
+.log-change .icon-up { color: #22c55e; }
+.log-change .icon-down { color: #ef4444; }
+.log-change .icon-deleted { color: #ef4444; }
+.log-change .icon-no-change { color: #6b7280; }
+
+.log-reason {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+  color: #374151;
+  text-transform: capitalize;
+}
+.reason-stock-update { background-color: #dbeafe; color: #1d4ed8; }
+.reason-product-created { background-color: #dcfce7; color: #166534; }
+.reason-product-deleted { background-color: #fee2e2; color: #991b1b; }
+
+.no-logs {
+  text-align: center;
+  padding: 1.5rem;
+  color: #6b7280;
+}
