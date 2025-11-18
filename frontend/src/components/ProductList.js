@@ -1,19 +1,18 @@
-
 import { Pencil, Trash2 } from 'lucide-react';
-import './ProductList.css'; // Import the new CSS file
+import './ProductList.css'; 
 
-function ProductList({ products, onEdit, onDelete }) {
+// UPDATED: Accept user prop
+function ProductList({ products, onEdit, onDelete, user }) {
+
+  // --- ADD THIS LOGGING LINE ---
+  console.log(`[LOG] ProductList.js: Rendering with ${products.length} products.`);
 
   const getStatusClass = (status) => {
     switch (status) {
-      case 'In Stock':
-        return 'status-in-stock';
-      case 'Low Stock':
-        return 'status-low-stock';
-      case 'Out of Stock':
-        return 'status-out-of-stock';
-      default:
-        return 'status-default';
+      case 'In Stock': return 'status-in-stock';
+      case 'Low Stock': return 'status-low-stock';
+      case 'Out of Stock': return 'status-out-of-stock';
+      default: return 'status-default';
     }
   };
 
@@ -66,6 +65,7 @@ function ProductList({ products, onEdit, onDelete }) {
                 </td>
                 <td>
                   <div className="action-buttons">
+                    {/* Everyone can edit */}
                     <button
                       onClick={() => onEdit(product)}
                       className="action-btn action-btn-edit"
@@ -73,13 +73,17 @@ function ProductList({ products, onEdit, onDelete }) {
                     >
                       <Pencil className="icon" />
                     </button>
-                    <button
-                      onClick={() => onDelete(product.id)}
-                      className="action-btn action-btn-delete"
-                      aria-label="Delete"
-                    >
-                      <Trash2 className="icon" />
-                    </button>
+                    
+                    {/* --- NEW: Only admins can delete --- */}
+                    {user && user.role === 'admin' && (
+                      <button
+                        onClick={() => onDelete(product.id)}
+                        className="action-btn action-btn-delete"
+                        aria-label="Delete"
+                      >
+                        <Trash2 className="icon" />
+                      </button>
+                    )}
                   </div>
                 </td>
               </tr>
