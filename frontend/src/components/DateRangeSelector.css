@@ -1,0 +1,67 @@
+.date-range-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #f9fafb; /* Light gray background */
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+  /* This component is not inside product-list-section, so add border radius */
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: 2rem; /* Add margin to separate from stats cards */
+}
+
+.date-picker-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.date-picker-input {
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 42px;
+  background-color: white;
+}
+
+.date-picker-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.clear-dates-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #6b7280;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  height: 42px;
+}
+.clear-dates-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Override react-datepicker styles */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker__input-container {
+  width: 100%;
+}
+.react-datepicker__clear-icon {
+  right: 5px !important;
+}
