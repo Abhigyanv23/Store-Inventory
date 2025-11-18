@@ -1,0 +1,116 @@
+.management-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.management-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.management-card h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.management-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.management-form input {
+  flex-grow: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  background-color: #22c55e; /* Green */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-add:hover {
+  background-color: #16a34a;
+}
+.btn-add .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.25rem;
+}
+
+.management-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.management-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+.management-list li:last-child {
+  border-bottom: none;
+}
+
+.management-list li span {
+  font-weight: 500;
+}
+
+.management-list li.empty-list {
+  color: #6b7280;
+  font-style: italic;
+  justify-content: center;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  color: #ef4444; /* Red */
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-delete:hover {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+.btn-delete .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.management-card .error-message {
+  padding: 0.75rem;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+
+@media (min-width: 768px) {
+  .management-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
